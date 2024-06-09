@@ -27,7 +27,7 @@ lint:
 
 .PHONY: test  # Run the tests
 test:
-	rye run coverage run -m pytest
+	rye run coverage run -m pytest $(TEST_ARG)
 
 .PHONY: testcov  # Run tests and generate a coverage report
 testcov: test
